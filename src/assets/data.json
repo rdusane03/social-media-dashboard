@@ -1,0 +1,42 @@
+[{
+  "appName": "facebook",
+  "imgURL":"../assets/icon-facebook.svg",
+  "userName": "@nathaF",
+  "users" : "1987",
+  "todayData": "12 Today",
+  "todayValue" : "../assets/icon-up.svg",
+  "behavior" : "positive",
+  "typeOfUsers" : "Followers"
+},
+
+{
+  "appName": "twitter",
+  "imgURL":"../assets/icon-twitter.svg",
+  "userName": "@nathaF",
+  "users" : "1044",
+  "todayData": "99 Today",
+  "todayValue" : "../assets/icon-up.svg",
+  "behavior" : "positive",
+  "typeOfUsers" : "Followers"
+},
+
+{
+  "appName": "instagram",
+  "imgURL":"../assets/icon-instagram.svg",
+  "userName": "@realnathaF",
+  "users" : "11k",
+  "todayData": "1099 Today",
+  "todayValue" : "../assets/icon-up.svg",
+  "behavior" : "positive",
+  "typeOfUsers" : "Followers"
+},
+{
+  "appName": "youtube",
+  "imgURL":"../assets/icon-youtube.svg",
+  "userName": "Nathan F",
+  "users" : "8239",
+  "todayData": "144 Today",
+  "todayValue" : "../assets/icon-down.svg",
+  "behavior" : "negative",
+  "typeOfUsers" : "Subscribers"
+}]

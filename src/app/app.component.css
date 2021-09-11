@@ -1,0 +1,57 @@
+.jumbotron{
+    border-radius: 10px;
+    background-color: hsl(225, 100%, 98%);
+    width: 100%;
+    
+   
+}
+
+.summary{
+    margin-left: 140px;
+}
+
+.card{
+    transform: 50%;
+    margin-top: -9%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+    background-color: hsl(227, 47%, 96%);
+
+}
+
+.positive{
+    color: #54a393
+}
+
+.negative{
+color:#be656d;
+}
+
+.users{
+    font-weight: 700;
+}
+
+.Facebook{
+    border-top : 4px solid hsl(208, 92%, 53%);
+}
+.Twitter{
+    border-top : 4px solid hsl(203, 89%, 53%);
+}
+.Instagram{
+    border-top: 4px solid;
+    border-image-source: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+
+    border-image-slice: 1;
+
+}
+.Youtube{
+    border-top : 4px solid hsl(203, 89%, 53%);
+}
+
+.typeofUsers{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+}
