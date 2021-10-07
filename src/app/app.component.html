@@ -1,19 +1,13 @@
-
-
-<div class="jumbotron">
-  <div class="container">
-    <h1>Social Media Dashboard</h1>
-    <p>Total number of followers : <span>{{totalFollowers}}</span></p><br>
-    
-  </div>
+<div class="container"><div class="jumbotron">
+    <h2 style="color:hsl(230, 17%, 14%);">Social Media Dashboard</h2>  <div class="toggle-btn" id="toggle-button" #toggle (click)="switchTheme(toggle);" onclick="this.classList.toggle('active'); "><div class="inner-circle"></div></div>
+    <p style="color:hsl(228, 12%, 44%);"><b>Total Followers: </b> <span><b>{{totalFollowers}}</b></span></p>
+ <br>
 </div>
 
 <div class="summary">
-
-
   <div class="row">
     <!-- Card -->
-    <div class="card" style="width: 18rem; margin-left: 30px" [ngClass]="{'Instagram':d.appName ==='instagram',
+    <div class="card" style="width: 15rem; margin-left: 30px" [ngClass]="{'Instagram':d.appName ==='instagram',
       'Youtube':d.appName ==='youtube',
       'Twitter':d.appName ==='twitter',
       'Facebook':d.appName ==='facebook'
@@ -23,9 +17,6 @@
         <!-- Title -->
         <img src="{{d.imgURL}}">
         <span style="margin-left: 6px ;">{{d.userName}}</span>
-        <!-- <div class="d-flex justify-content-center">
-          <img src="{{da.imgURL}}"><span>&nbsp;{{da.userName}}</span><br>
-        </div> -->
         <!-- Text -->
         <h1 class="users" style="color :hsl(230, 17%, 14%)">{{d.users}}</h1>
         <div class="typeofUsers">{{d.typeOfUsers}}</div><br>
@@ -35,17 +26,155 @@
         <span [ngClass]="{'positive': d.behavior === 'positive' ,
         'negative' : d.behavior === 'negative'}">
 {{d.todayData}}</span>
-
-
-        <!-- <div class="text-center"> <br>
-          <h3>{{da.followers}}</h3>
-          <p>{{da.todayData}}</p>
-          <p>Today</p>
-        </div> -->
-
-        
       </div>
     </div>&nbsp;&nbsp;
-
   </div>
 </div>
+<br>
+
+<!-- Overview Card-->
+<div><h2 class="col-sm-4" style="color: hsl(230, 17%, 14%);">Overview - Today</h2></div>
+<br>
+<div style="padding-left: 20px; padding-right: 40px;">
+ <div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <span style="text-align: left; font-size: 14px;"><b>Page Views</b></span><img style="margin-left:90px;" src="../assets/icon-facebook.svg">
+        <br>
+        <br>
+        <div class="row">
+          <h3 style="padding-left: 20px;">87</h3>
+          <span  style="margin-left:120px; height:6px"> <img src="../assets/icon-up.svg">
+          </span>
+          <br/>
+          <span  class="positive"> 3%</span>
+        </div>
+      </div>
+    </div>
+ </div>
+ <div class="col-sm-3">
+  <div class="card">
+    <div class="card-body">
+      <span style="text-align: left; font-size: 14px;"><b>Likes</b></span><img style="margin-left:120px;" src="../assets/icon-facebook.svg">
+      <br>
+      <br>
+      <div class="row">
+        <h3 style="padding-left: 20px;">52</h3>
+        <span  style="margin-left:120px; height:6px"> <img src="../assets/icon-down.svg">
+        </span>
+        <br/>
+        <span  class="negative"> 2%</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-3">
+  <div class="card">
+    <div class="card-body">
+      <span style="text-align: left; font-size: 14px;"><b>Likes</b></span><img style="margin-left:120px;" src="../assets/icon-instagram.svg">
+      <br>
+      <br>
+      <div class="row">
+        <h3 style="padding-left: 20px;">5462</h3>
+        <span  style="margin-left:80px; height:6px"> <img src="../assets/icon-up.svg">
+        </span>
+        <br/>
+        <span  class="positive"> 2257%</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-3">
+  <div class="card">
+    <div class="card-body">
+      <span style="text-align: left; font-size: 14px;"><b>Profile Views</b></span><img style="margin-left:70px;" src="../assets/icon-instagram.svg">
+      <br>
+      <br>
+      <div class="row">
+        <h3 style="padding-left: 20px;">52K</h3>
+        <span  style="margin-left:80px; height:6px"> <img src="../assets/icon-up.svg">
+        </span>
+        <br/>
+        <span  class="positive"> 1375%</span>
+      </div>
+    </div>
+  </div>
+</div>
+ </div>
+
+<br>
+ <div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <span style="text-align: left; font-size: 14px;"><b>Retweets</b></span><img style="margin-left:110px;" src="../assets/icon-twitter.svg">
+        <br>
+        <br>
+        <div class="row">
+          <h3 style="padding-left: 20px;">117</h3>
+          <span  style="margin-left:120px; height:6px"> <img src="../assets/icon-up.svg">
+          </span>
+          <br/>
+          <span  class="positive"> 303%</span>
+        </div>
+      </div>
+    </div>
+ </div>
+ <div class="col-sm-3">
+  <div class="card">
+    <div class="card-body">
+      <span style="text-align: left; font-size: 14px;"><b>Likes</b></span><img style="margin-left:130px;" src="../assets/icon-twitter.svg">
+      <br>
+      <br>
+      <div class="row">
+        <h3 style="padding-left: 20px;">507</h3>
+        <span  style="margin-left:100px; height:6px"> <img src="../assets/icon-up.svg">
+        </span>
+        <br/>
+        <span  class="positive"> 553%</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-3">
+  <div class="card">
+    <div class="card-body">
+      <span style="text-align: left; font-size: 14px;"><b>Likes</b></span><img style="margin-left:140px;" src="../assets/icon-youtube.svg">
+      <br>
+      <br>
+      <div class="row">
+        <h3 style="padding-left: 20px;">107</h3>
+        <span  style="margin-left:120px; height:6px"> <img src="../assets/icon-down.svg">
+        </span>
+        <br/>
+        <span  class="negative"> 19%</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-3">
+  <div class="card">
+    <div class="card-body">
+      <span style="text-align: left; font-size: 14px;"><b>Total Views</b></span><img style="margin-left:90px;" src="../assets/icon-youtube.svg">
+      <br>
+      <br>
+      <div class="row">
+        <h3 style="padding-left: 20px;">1407</h3>
+        <span style="margin-left:100px; height:6px"> <img src="../assets/icon-down.svg">
+        </span>
+        <br/>
+        <span  class="negative"> 12%</span>
+      </div>
+    </div>
+  </div>
+</div>
+ </div>
+<br>
+<br>
+  </div>
+  </div>
